@@ -56,7 +56,10 @@ gem 'meta-tags'
 gem 'awesome_print'
 gem 'hiredis'
 gem 'connection_pool'
+gem 'browser'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
+
+
