@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'weddings#index'
   resources :weddings, only: %i(index)
   get :map, controller: :weddings, action: :map, defaults: { format: :html }
+  get :album, controller: :weddings, action: :album, defaults: { format: :html }
 end

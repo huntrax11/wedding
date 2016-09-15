@@ -3,13 +3,13 @@
     &#9776;
   </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand" href="#">결혼식</a>
+    <%= link_to '결혼식', root_path, class: 'navbar-brand' %>
     <ul class="nav navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">앨범</a>
+        <%= link_to '앨범', album_path, class: 'nav-link' %>
       </li>
       <li class="nav-item">
         <%= link_to '찾아 오시는 길', map_path, class: 'nav-link' %>

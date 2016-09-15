@@ -4,6 +4,9 @@ class WeddingsController < ApplicationController
   def index
   end
 
+  def album
+  end
+
   def map
     request.variant = :mobile if browser.device.mobile?
 
