@@ -1,12 +1,9 @@
 <section class="jumbotron text-xs-center">
-  <div class="container">
-    <%= image_tag('wedding.jpg') %>
-
+    <%= image_tag('wedding.jpg', class: 'img-thumbnail') %>
     <h1 class="jumbotron-heading">결혼합니다.</h1>
     <p class="lead text-muted">2016년 10월 30일 오후 2시 서초역 8번출구 아이윌 웨딩홀</p>
     <p>
       <%= link_to '앨범 보러가기', album_path, class: 'btn btn-primary' %>
       <%= link_to '약도 보러가기', map_path, class: 'btn btn-secondary' %>
     </p>
-  </div>
 </section>
