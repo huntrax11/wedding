@@ -1,18 +1,15 @@
 <ul id="myTab" class="nav nav-tabs" role="tablist">
   <li class="nav-item">
-    <%= link_to '결혼합니다', root_path, class: 'nav-link' %>
+    <%= link_to '결혼합니다', root_path, class: 'nav-link', style: 'font-weight: 500; color: gray;' %>
   </li>
   <li class="nav-item">
-    <%= link_to '앨범', album_path, class: 'nav-link' %>
+    <%= link_to '앨범', album_path, class: 'nav-link', style: 'font-weight: 500; color: gray;' %>
   </li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">찾아오시는 길</a>
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false", style="font-weight: 500; color: gray">찾아오시는 길</a>
     <div class="dropdown-menu">
       <%= link_to '약도', map_path, class: 'dropdown-item' %>
-      <a class="dropdown-item" href="#">주소</a>
-      <a class="dropdown-item" href="#">전세버스</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+      <a class="dropdown-item" href="<%= bus_path %>">부산 <i class="fa fa-exchange" aria-hidden="true"></i> 서울 전세버스</a>
     </div>
   </li>
 </ul>
