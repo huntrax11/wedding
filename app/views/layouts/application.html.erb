@@ -17,10 +17,16 @@
 
 <body>
 <div style="margin-top: 50px;">
+  <% unless browser.device.mobile? %>
+      <div class="container">
+  <% end %>
   <%= render 'shared/navigation_bar' %>
-  <p />
+  <p/>
   <%= render 'layouts/messages' %>
   <%= yield %>
+  <% unless browser.device.mobile? %>
+      </div>
+  <% end %>
 </div>
 </body>
 </html>

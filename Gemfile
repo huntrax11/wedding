@@ -61,4 +61,5 @@ source 'https://rails-assets.org' do
 end
 
 
-gem "font-awesome-rails"
+gem 'meta-tags'
+gem 'font-awesome-rails'
