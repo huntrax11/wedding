@@ -4,9 +4,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="결혼식">
-  <meta name="author" content="Benjamin">
-  <title>박보영, 김재호의 결혼식</title>
+  <%= display_meta_tags(
+        prefix: false,
+        separator: ' -',
+        title: '결혼합니다.'.freeze,
+        reverse: true,
+        og: {
+          title: '결혼합니다.'.freeze,
+          image: asset_url('wedding.jpg'),
+          site_name: '김재호 & 박보영'.freeze,
+          description: '10월 30일 오후 2시 서초동 아이윌웨딩홀'.freeze
+        }
+      )
+  %>
   <%= favicon_link_tag 'favicon.png' %>
   <%= csrf_meta_tags %>
 
